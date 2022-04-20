@@ -1,8 +1,9 @@
-/*constant area*/
+/*Constant area*/
+//board constant
 const BOARD_SIZE = 8;
 const WHITE_PLAYER = 'white';
 const BLACK_PLAYER = 'black';
-
+//player constant
 const PAWN = 'pawn';
 const ROOK = 'rook';
 const KNIGHT = 'knight';
@@ -13,80 +14,6 @@ const QUEEN = 'queen';
 let selectedCell;
 let pieces = [];
 let table;
-
-class Piece {
-    constructor(row, col, type, player) {
-        this.row = row;
-        this.col = col;
-        this.type = type;
-        this.player = player;
-    }
-
-    getPossibleMoves() {
-        let relativeMoves;
-        if (this.type === PAWN) {
-            relativeMoves = this.getPawnRelativeMoves();
-        } else if (this.type === ROOK) {
-            relativeMoves = this.getRookRelativeMoves();
-        } else if (this.type === KNIGHT) {
-            relativeMoves = this.getKnightRelativeMoves();
-        } else if (this.type === BISHOP) {
-            relativeMoves = this.getBishopRelativeMoves();
-        } else if (this.type === KING) {
-            relativeMoves = this.getKingRelativeMoves();
-        } else if (this.type === QUEEN) {
-            relativeMoves = this.getQueenRelativeMoves();
-        } else {
-            console.log("Unknown type", type)
-        }
-        console.log('relativeMoves', relativeMoves);
-
-        let absoluteMoves = [];
-        for (let relativeMove of relativeMoves) {
-            const absoluteRow = this.row + relativeMove[0];
-            const absoluteCol = this.col + relativeMove[1];
-            absoluteMoves.push([absoluteRow, absoluteCol]);
-        }
-        console.log('absoluteMoves', absoluteMoves);
-
-        let filteredMoves = [];
-        for (let absoluteMove of absoluteMoves) {
-            const absoluteRow = absoluteMove[0];
-            const absoluteCol = absoluteMove[1];
-            if (absoluteRow >= 0 && absoluteRow <= 7 && absoluteCol >= 0 && absoluteCol <= 7) {
-                filteredMoves.push(absoluteMove);
-            }
-        }
-        console.log('filteredMoves', filteredMoves);
-        return filteredMoves;
-    }
-
-    getPawnRelativeMoves() {
-        // TODO: Give different answer to black player
-        return [[1, 0]];
-    }
-
-    getRookRelativeMoves() {
-        let result = [];
-        for (let i = 1; i < BOARD_SIZE; i++) {
-            result.push([i, 0]);
-            result.push([-i, 0]);
-            result.push([0, i]);
-            result.push([0, -i]);
-        }
-        return result;
-    }
-}
-class BoardData {
-    constructor(pieces) {
-        this.pieces = pieces;
-    }
-
-    // Returns piece in row, col, or undefined if not exists.
-    getPiece(row, col) {
-
-    }
-}
 
 /*founction area*/ //start
 function getInitialBoard() {
@@ -170,7 +97,105 @@ function createChessBoard() {
         addImage(table.rows[piece.row].cells[piece.col], piece.player, piece.type);
     }
 }
+
 /*founction area*/ //end
+
+class Piece {
+    constructor(row, col, type, player) {
+        this.row = row;
+        this.col = col;
+        this.type = type;
+        this.player = player;
+    }
+
+    getPossibleMoves() { // call to founction of some spesific player
+        let relativeMoves;
+        if (this.type === PAWN) {
+            relativeMoves = this.getPawnRelativeMoves();
+        } else if (this.type === ROOK) {
+            relativeMoves = this.getRookRelativeMoves();
+        } else if (this.type === KNIGHT) {
+            relativeMoves = this.getKnightRelativeMoves();
+        } else if (this.type === BISHOP) {
+            relativeMoves = this.getBishopRelativeMoves();
+        } else if (this.type === KING) {
+            relativeMoves = this.getKingRelativeMoves();
+        } else if (this.type === QUEEN) {
+            relativeMoves = this.getQueenRelativeMoves();
+        } else {
+            console.log("Unknown type", type) //why? becouse if some type not ununilted
+        }
+        console.log('relativeMoves', relativeMoves); //personel check
+        let absoluteMoves = []; //declrate about the move of every player
+        for (let relativeMove of relativeMoves) {
+            const absoluteRow = this.row + relativeMove[0];
+            const absoluteCol = this.col + relativeMove[1];
+            absoluteMoves.push([absoluteRow, absoluteCol]);
+        }
+        console.log('absoluteMoves', absoluteMoves);
+
+        let filteredMoves = [];
+        for (let absoluteMove of absoluteMoves) {
+            const absoluteRow = absoluteMove[0];
+            const absoluteCol = absoluteMove[1];
+            if (absoluteRow >= 0 && absoluteRow <= 7 && absoluteCol >= 0 && absoluteCol <= 7) {
+                filteredMoves.push(absoluteMove);
+            }
+        }
+        console.log('filteredMoves', filteredMoves);
+        return filteredMoves;
+    }
+
+    getPawnRelativeMoves() {
+        return [[-1, 0]]
+        return [[1, 0]];
+    }
+
+    getRookRelativeMoves() {
+        let result = [];
+        for (let i = 1; i < BOARD_SIZE; i++) {
+            result.push([i, 0]);
+            result.push([-i, 0]);
+            result.push([0, i]);
+            result.push([0, -i]);
+        }
+        return result;
+    }
+}
+
+// getKnightRelativeMoves(){
+
+// }
+
+// getBishopRelativeMoves(){
+
+// }
+
+// getKingRelativeMoves(){
+
+// }
+
+// getQueenRelativeMoves(){
+
+// }
+
+
+
+
+//todo: fuonction of player
+class BoardData {
+    constructor(pieces, player) {
+        this.pieces = pieces;
+        this.player = player;
+    }
+
+    // Returns piece in row, col, or undefined if not exists.
+    getPiece(row, col) {
+
+    }
+}
+
+
 
 
 /*this command - create the chess board*/
