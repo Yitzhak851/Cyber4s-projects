@@ -1,48 +1,30 @@
-td {
-    border: 1px solid gray;
-}
-
-
 table {
-    width: 500px;
-    height: 500px;
-    border-collapse: collapse;
-    background-color: rgb(230, 230, 230);
-    margin: 0 auto;
-    margin-top:50px;
-}
-
-td {
-    border: 1px solid gray;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    vertical-align: middle;
+    margin: auto;
+    position: absolute;
+    right: 500px;
+    top: 70px;
+    border: 6px solid black;
+    height: 200px;
+    width: 200px;
+    left: 30%;
 }
 
 .light-cell {
     background: rgb(211, 210, 210);
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: 65px;
 }
 
 .dark-cell {
     background: rgb(63, 63, 63);
-    width: 45px;
-    height: 45px;
-}
-
-img {
-    -webkit-filter: drop-shadow(1px 1px 0 white)
-    drop-shadow(-1px 1px 0 white)
-    drop-shadow(1px -1px 0 white) 
-    drop-shadow(-1px -1px 0 white);
-    filter: drop-shadow(1px 1px 0 white) 
-    drop-shadow(-1px 1px 0 white) 
-    drop-shadow(1px -1px 0 white) 
-    drop-shadow(-1px -1px 0 white);
+    width: 65px;
+    height: 65px;
 }
 
 .selected {
-    background-color: rgb(228, 231, 15);
+    background: rgb(197, 197, 83);
+}
+
+.possible-move {
+    background: rgb(221, 142, 46);
 }
