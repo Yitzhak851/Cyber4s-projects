@@ -3,7 +3,7 @@ const BOARD_SIZE = 8;            //משתנה קבוע - מספר המשבצות
 const WHITE_PLAYER = 'white';   //משתנה קבוע - שחקן לבן
 const BLACK_PLAYER = 'black';  //משתנה קבוע - שחקן שחור
 
-const PAWN = 'pawn';          //חייל רגלי
+const PAWN = 'pawn';          // soldier 
 const ROOK = 'rook';         //צריח
 const KNIGHT = 'knight';    //פרש
 const BISHOP = 'bishop';   //רץ
