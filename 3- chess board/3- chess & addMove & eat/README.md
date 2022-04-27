@@ -10,5 +10,4 @@ The update guidelines for the project were:
 4. Add movement for each player in is turn
 
 here some short link for my project:
-https:////.............
-
+https://htmlpreview.github.io/?https://github.com/Yitzhak851/Cyber4s-projects/blob/main/3-%20chess%20board/3-%20chess%20%26%20addMove%20%26%20eat/index.html
