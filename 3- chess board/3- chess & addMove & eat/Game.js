@@ -4,8 +4,9 @@ class Game {
     this.currentPlayer = firstPlayer;
   }
 
-  // Tries to actually make a move. Returns true if successful.
+  
   tryMove(piece, row, col) {
+    // Tries to actually make a move. Returns true if successful.
     const possibleMoves = this.getPossibleMoves(piece);
     // possibleMoves looks like this: [[1,2], [3,2]]
     for (const possibleMove of possibleMoves) {
