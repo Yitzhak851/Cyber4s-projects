@@ -1,4 +1,4 @@
-# cyber4s-examples
+# cyber4s-chesBoard tasks
 
 In this project I create a chess-board page-web,
 
