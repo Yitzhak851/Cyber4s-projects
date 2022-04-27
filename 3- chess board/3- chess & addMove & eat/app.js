@@ -1,7 +1,3 @@
-//messeage fot user
-window.alert('Hi you get in into chess board game - of YBO create - good luck!');
-
-//const area
 const BOARD_SIZE = 8;
 const WHITE_PLAYER = 'white';
 const BLACK_PLAYER = 'black';
@@ -56,9 +52,8 @@ function onCellClick(row, col) {
   }
 }
 
-
+// Adds an image to cell with the piece's image
 function addImage(cell, player, name) {
-  // Adds an image to cell with the piece's image
   const image = document.createElement('img');
   image.src = 'images/' + player + '/' + name + '.png';
   cell.appendChild(image);
