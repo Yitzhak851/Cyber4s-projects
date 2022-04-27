@@ -20,9 +20,9 @@ table {
 }
 
 .dark-cell {
-    background: rgb(63, 63, 63);
-    width: 65px;
-    height: 65px;
+    background: rgb(206, 17, 17);
+    width: 70px;
+    height: 70px;
 }
 
 .selected {
@@ -30,5 +30,5 @@ table {
 }
 
 .possible-move {
-    background: rgb(221, 142, 46);
+    background: rgb(163, 196, 15);
 }
