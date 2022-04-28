@@ -1,12 +1,12 @@
 table {
     margin: 20px;
-    position: relative;
-    right: 500px;
-    top: 70px;
+    position: absolute;
+    right: 800px;
+    top: 120px;
     border: 6px solid black;
     height: 200px;
     width: 200px;
-    left: 30%;
+    left: 20%;
 }
 #reka{
     background: aqua;
@@ -29,6 +29,8 @@ h2{
     font-weight: 100;
     width: 800px;
     left: 0px;
+    text-align: center;
+
 }
 
 .light-cell {
@@ -41,6 +43,7 @@ h2{
     background: brown;
     width: 70px;
     height: 70px;
+    user-select: none;
 }
 
 .selected {
@@ -62,6 +65,6 @@ h2{
     width: max-content;
 }
 
-.title{
+h1{
     text-align: center;
 }

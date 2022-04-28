@@ -88,14 +88,16 @@ function createChessBoard(boardData) {
     const cell = table.rows[piece.row].cells[piece.col];
     addImage(cell, piece.player, piece.type);
   }
-}
 
-if (game.winner !== undefined){
-  const winnerPopup = document.createElement('div');
-  const winner = game.winner.charAt(0).toUpperCase() + game.winner.slice(1);
-  winnerPopup.textContent = winner + 'Player wins!';
-  winnerPopup.classList.add('winner-dialog');
-  table.appendChild(winnerPopup)
+  if (game.winner !== undefined) {
+    const winnerPopup = document.createElement('div');
+    // black -> B + lack -> Black
+    const winner = game.winner.charAt(0).toUpperCase() + game.winner.slice(1);
+    winnerPopup.textContent = winner + ' player wins!';
+    winnerPopup.classList.add('winner-dialog');
+    table.appendChild(winnerPopup)
+  }
+
 }
 
 function initGame() {
