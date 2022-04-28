@@ -1,3 +1,13 @@
+table {
+    margin: 20px;
+    position: relative;
+    right: 500px;
+    top: 70px;
+    border: 6px solid black;
+    height: 200px;
+    width: 200px;
+    left: 30%;
+}
 #reka{
     background: aqua;
     margin: auto;
@@ -19,17 +29,6 @@ h2{
     font-weight: 100;
     width: 800px;
     left: 0px;
-}
-
-table {
-    margin: auto;
-    position: absolute;
-    right: 500px;
-    top: 70px;
-    border: 6px solid black;
-    height: 200px;
-    width: 200px;
-    left: 30%;
 }
 
 .light-cell {
@@ -56,8 +55,13 @@ table {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: (50%, 50%);
-    padding: 500px;
-    border-radius: 300px;
+    transform: (-50%, -50%);
+    background: white;
+    padding: 50;
+    border: radius 10px;
     width: max-content;
+}
+
+.title{
+    text-align: center;
 }
