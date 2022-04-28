@@ -1,5 +1,24 @@
-.reka{
-    background-color: aqua;
+#reka{
+    background: aqua;
+    margin: auto;
+    position: relative;
+    height: 800px;
+    width: 800px;
+    left: 0px;
+}
+
+h2{
+    height: 700px;
+    width: 500px;
+    left: 30%;
+}
+
+#buttonArea{
+    position: static;
+    height: fit-content;
+    font-weight: 100;
+    width: 800px;
+    left: 0px;
 }
 
 table {
@@ -14,13 +33,13 @@ table {
 }
 
 .light-cell {
-    background: rgb(211, 210, 210);
+    background: white;
     width: 65px;
     height: 65px;
 }
 
 .dark-cell {
-    background: rgb(206, 17, 17);
+    background: brown;
     width: 70px;
     height: 70px;
 }
