@@ -17,12 +17,6 @@ table {
     left: 0px;
 }
 
-h2{
-    height: 700px;
-    width: 500px;
-    left: 30%;
-}
-
 #buttonArea{
     position: static;
     height: fit-content;
