@@ -91,14 +91,11 @@ class Piece {
         result.push([row, col]);
       } else if (boardData.isPlayer(row, col, this.getOpponent())) {
         result.push([row, col]);
-        console.log("opponent");
         return result;
       } else if (boardData.isPlayer(row, col, this.player)) {
-        console.log("player");
         return result;
       }
     }
-    console.log("all empty");
     return result;
   }
 
