@@ -1,19 +1,16 @@
 /*Constant area*/
-const BOARD_SIZE = 8;            //משתנה קבוע - מספר המשבצות בלוח
-const WHITE_PLAYER = 'white';   //משתנה קבוע - שחקן לבן
-const BLACK_PLAYER = 'black';  //משתנה קבוע - שחקן שחור
-
-const PAWN = 'pawn';          // soldier 
-const ROOK = 'rook';         //צריח
-const KNIGHT = 'knight';    //פרש
-const BISHOP = 'bishop';   //רץ
-const KING = 'king';      //מלך
-const QUEEN = 'queen';   //מלכה
-
-let selectedCell;       //declrate about var
-let table;           //declrate about the board table
+const BOARD_SIZE = 8;
+const WHITE_PLAYER = 'white';
+const BLACK_PLAYER = 'black';
+const PAWN = 'pawn';
+const ROOK = 'rook';
+const KNIGHT = 'knight';
+const BISHOP = 'bishop';
+const KING = 'king';
+const QUEEN = 'queen';
+let selectedCell;
+let table;
 let boardData;
-window.alert('Hi you get in into chess board game - of YBO create - good luck!');
 
 //creating classes to pieces
 class Piece {
@@ -23,7 +20,6 @@ class Piece {
         this.type = type;
         this.player = player
     }
-
 
     getPossibleMoves() {
         let relativeMoves;
@@ -91,15 +87,13 @@ class Piece {
         return [...combined, ...reversedcombined];
     }
 
-
     getBishopRelativeMoves() {
         const boardSizeArray = [...Array(BOARD_SIZE).keys()].slice(1);
         const movesArray = boardSizeArray.map(i => {
             return [[+i, +i], [-i, -i], [+i, -i], [-i, +i]]
         }).flat();
         return movesArray;
-    };
-
+    }
 
     getKingRelativeMoves() {
         const numbers = [-1, 0, +1];
@@ -194,7 +188,6 @@ function onCellClick(event, row, col) {
     selectedCell.classList.add('selected');
 }
 
-
 function createChessBoard() {
     // Create empty chess board HTML:                         
     const cols = { 1: "A", 2: "B", 3: "C", 4: "D", 5: "E", 6: "F", 7: "G", 8: "H" }
@@ -232,4 +225,5 @@ function createChessBoard() {
         addImage(cell, piece.player, piece.type);
     }
 }
+
 window.addEventListener('load', createChessBoard);  //this command - create the chess board
