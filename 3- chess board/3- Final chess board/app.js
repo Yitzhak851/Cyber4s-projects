@@ -1,4 +1,4 @@
-//constant block
+//Constant block - 
 const BOARD_SIZE = 8;
 const WHITE_PLAYER = 'white';
 const BLACK_PLAYER = 'black';

@@ -8,14 +8,6 @@ table {
     width: 200px;
     left: 20%;
 }
-#reka{
-    background: aqua;
-    margin: auto;
-    position: relative;
-    height: 800px;
-    width: 800px;
-    left: 0px;
-}
 
 #buttonArea{
     position: static;
