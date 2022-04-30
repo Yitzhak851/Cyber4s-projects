@@ -28,16 +28,16 @@ table {
 }
 
 .light-cell {
-    background: white;
+    background: rgb(226, 71, 71);
     width: 65px;
     height: 65px;
 }
 
 .dark-cell {
-    background: brown;
+    background: rgb(94, 8, 8);
     width: 70px;
     height: 70px;
-    user-select: none;
+    ms-user-select: none;
 }
 
 .selected {
@@ -45,7 +45,7 @@ table {
 }
 
 .possible-move {
-    background: rgb(163, 196, 15);
+    background: rgb(231, 108, 6);
 }
 
 .winner.dialog{

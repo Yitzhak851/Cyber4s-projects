@@ -2,9 +2,9 @@ class BoardData {
   constructor() {
     this.initPieces();
   }
-
+  
+  // Create list of pieces (32 total)
   initPieces() {
-    // Create list of pieces (32 total)
     this.pieces = [];
 
     for (let i = 0; i < BOARD_SIZE; i++) {

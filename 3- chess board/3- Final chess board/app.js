@@ -1,24 +1,22 @@
+//constant block
 const BOARD_SIZE = 8;
 const WHITE_PLAYER = 'white';
 const BLACK_PLAYER = 'black';
-
 const PAWN = 'pawn';
 const ROOK = 'rook';
 const KNIGHT = 'knight';
 const BISHOP = 'bishop';
 const KING = 'king';
 const QUEEN = 'queen';
-
 const PIECES = [ROOK, KNIGHT, BISHOP, KING, QUEEN, BISHOP, KNIGHT, ROOK];
-
 const CHESS_BOARD_ID = 'chess-board';
 
 let game;
 let table;
 let selectedPiece;
 
+// Clear all previous possible moves
 function tryUpdateSelectedPiece(row, col) {
-  // Clear all previous possible moves
   for (let i = 0; i < BOARD_SIZE; i++) {
     for (let j = 0; j < BOARD_SIZE; j++) {
       table.rows[i].cells[j].classList.remove('possible-move');
@@ -52,20 +50,11 @@ function onCellClick(row, col) {
   }
 }
 
-// Adds an image to cell with the piece's image
-function addImage(cell, player, name) {
-  const image = document.createElement('img');
-  image.src = 'images/' + player + '/' + name + '.png';
-  image.draggable = false;
-  cell.appendChild(image);
-}
-
 function createChessBoard(boardData) {
   table = document.getElementById(CHESS_BOARD_ID);
   if (table !== null) {
     table.remove();
   }
-
   // Create empty chess board HTML:
   table = document.createElement('table');
   table.id = CHESS_BOARD_ID;
@@ -82,7 +71,6 @@ function createChessBoard(boardData) {
       cell.addEventListener('click', () => onCellClick(row, col));
     }
   }
-
   // Add pieces images to board
   for (let piece of boardData.pieces) {
     const cell = table.rows[piece.row].cells[piece.col];
@@ -100,9 +88,30 @@ function createChessBoard(boardData) {
 
 }
 
+// Adds an image to cell with the piece's image
+function addImage(cell, player, name) {
+  const image = document.createElement('img');
+  image.src = 'images/' + player + '/' + name + '.png';
+  image.draggable = false;
+  cell.appendChild(image);
+}
+
 function initGame() {
   game = new Game(WHITE_PLAYER);
   createChessBoard(game.boardData);
 }
+//TODO - adding the next app:
+
+// founction mNotPossibleMoveForThisPlayer{
+
+// }
+
+// founction mItIsNotYourTorn{
+
+// } 
+
+// founction mPlayerWinner{
+
+// }
 
 window.addEventListener('load', initGame);

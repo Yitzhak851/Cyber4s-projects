@@ -1,5 +1,3 @@
-// TODO: Refactor to shorten and deduplicate code - Avraham.
-
 class Piece {
   constructor(row, col, type, player) {
     this.row = row;
@@ -16,7 +14,6 @@ class Piece {
   }
 
   getPossibleMoves(boardData) {
-    // Get moves
     let moves;
     if (this.type === PAWN) {
       moves = this.getPawnMoves(boardData);
@@ -31,9 +28,7 @@ class Piece {
     } else if (this.type === QUEEN) {
       moves = this.getQueenMoves(boardData);
     } else {
-      console.log("Unknown type", type)
     }
-
     // Get filtered absolute moves
     let filteredMoves = [];
     for (const absoluteMove of moves) {
@@ -52,8 +47,8 @@ class Piece {
     if (this.player === BLACK_PLAYER) {
       direction = -1;
     }
-
     let position = [this.row + direction, this.col];
+    
     if (boardData.isEmpty(position[0], position[1])) {
       result.push(position);
     }
@@ -67,8 +62,7 @@ class Piece {
     if (boardData.isPlayer(position[0], position[1], this.getOpponent())) {
       result.push(position);
     }
-
-
+    
     return result;
   }
 
