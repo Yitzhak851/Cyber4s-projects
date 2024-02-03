@@ -1,0 +1,82 @@
+table {
+    padding: 5px;
+    margin: 5px;
+    border-collapse: collapse;
+    position: relative;
+    right: 800px;
+    top: 120px;
+    height: 10%;
+    width: 200px;
+    left: 40%;
+}
+
+.light-cell {
+    background: rgb(226, 71, 71);
+    width: 70px;
+    height: 70px;
+    ms-user-select: none;
+}
+
+.dark-cell {
+    background: rgb(94, 8, 8);
+    width: 70px;
+    height: 70px;
+    ms-user-select: none;
+}
+
+.selected {
+    background: rgb(197, 197, 83);
+}
+
+.possible-move {
+    background: rgb(231, 108, 6);
+}
+
+.winner.dialog {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: (-50%, -50%);
+    background: red;
+    padding: 50px;
+    content: 50px;
+    border: 50px;
+    ;
+    border: radius 10px;
+    width: max-content;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin: 5px;
+    font-size: 3vw;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin: 5px;
+    font-size: 3vw;
+}
+
+
+/* #id{
+    background-color: aqua;    
+    content: 20px;
+    padding: 50px;
+    border: 5px;
+    margin: 100px;
+}
+
+.class{
+    width: 50vw; //אחוז מרוחב המסך
+    height: 50vh; //אחוז מגובה המסך
+}
+
+h1{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
