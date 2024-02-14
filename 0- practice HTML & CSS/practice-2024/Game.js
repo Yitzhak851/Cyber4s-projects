@@ -1,3 +1,4 @@
+// game class
 class Game {
   constructor(firstPlayer) {
     this.boardData = new BoardData();
