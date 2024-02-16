@@ -6,6 +6,7 @@ var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 var numbers = ['1', '2', '3', '4', '5', '6', '7', '8']
 var display = 'block'
 
+// four functions to render the board
 const renderBoard = (useLabels) => {
     if (useLabels) {
         renderLabels()
