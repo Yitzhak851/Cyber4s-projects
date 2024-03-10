@@ -1,3 +1,4 @@
+// here all the board data
 class BoardData {
   constructor() {
     this.initPieces();
