@@ -1,0 +1,23 @@
+# Subject
+
+CSS overview
+
+Color of elements (style arrtibute)
+Style by tag name
+CSS classes
+ID
+Color
+Background
+Font
+Text decoretion
+Size
+Units and calc()
+Status selector: hover, active, disable
+Cursor
+Boundaries(margin,padding,bording)
+Outline
+Position
+z-index
+Display
+Media-query
+Flex-box

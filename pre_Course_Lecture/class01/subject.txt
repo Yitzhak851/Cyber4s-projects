@@ -16,3 +16,41 @@ make amazon/wikipedia page
 IDE - internet develop enviroment
 סביבה שמיועדת למפתחים לפתח,ניתן גם לפתח ב-notepad
 
+- Subject:
+1. Introduction
+2. Elements
+3. Nesting of Elements
+4. Add an immage
+5. CSS
+6. Size
+7. Font
+8. Javascript
+9. Print to the console
+10. Comments
+11. HTML + CSS + Javascript
+
+# HTML overview
+<h1> elements 
+<h2> elements
+<p> elements
+Lorem ipsum
+Comments
+Nesting of elements
+Add an immage
+Anchor elements <a>
+Open in new tab
+ID arrtibute and hash symbol
+Nesting links
+Elements as links
+Anorder list <ul>
+Order list <ol>
+<input> elements
+Placeholder arrtibute
+Radio buttons
+Checkbox
+Checkbox or Radio buttons Checked by defult
+<div> elements
+HTML page structure
+<head> elements of HTML page
+
+
