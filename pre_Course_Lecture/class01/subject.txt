@@ -1,0 +1,18 @@
+# starting to learn
+
+- Task 1:
+make amazon/wikipedia page
+
+- General : channel on slack
+    *General
+    *random
+    *annoncment
+    *stuff - for teacer
+    *mems
+    *playlyst
+    *material
+
+- ID about wakka :
+IDE - internet develop enviroment
+סביבה שמיועדת למפתחים לפתח,ניתן גם לפתח ב-notepad
+
