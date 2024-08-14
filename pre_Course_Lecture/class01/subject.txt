@@ -1,24 +1,11 @@
 # starting to learn
-
-- Task 1:
-make amazon/wikipedia page
-
-- General : channel on slack
-    *General
-    *random
-    *annoncment
-    *stuff - for teacer
-    *mems
-    *playlyst
-    *material
-
-- ID about wakka :
-IDE - internet develop enviroment
-סביבה שמיועדת למפתחים לפתח,ניתן גם לפתח ב-notepad
-
-- Subject:
+# =========== Subjects =========== :
+        # HTML overview
 1. Introduction
 2. Elements
+    <h1> elements 
+    <h2> elements
+    <p> elements
 3. Nesting of Elements
 4. Add an immage
 5. CSS
@@ -29,10 +16,6 @@ IDE - internet develop enviroment
 10. Comments
 11. HTML + CSS + Javascript
 
-# HTML overview
-<h1> elements 
-<h2> elements
-<p> elements
 Lorem ipsum
 Comments
 Nesting of elements
@@ -54,3 +37,16 @@ HTML page structure
 <head> elements of HTML page
 
 
+- Task 1:
+make amazon/wikipedia page
+
+- General : channel on slack
+    *General
+    *random
+    *annoncment
+    *stuff - for teacer
+    *mems
+    *playlyst
+    *material
+
+- ID about wakka : IDE - internet develop enviroment סביבה שמיועדת למפתחים לפתח,ניתן גם לפתח ב-notepad
