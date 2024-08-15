@@ -1,1 +1,58 @@
 /*  */
+body, h1, p{
+    margin: 0;
+    padding: 0;
+
+}
+
+.article a{
+    color: #3366cc;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+}
+
+.logo img{
+    padding-left: 16px;
+    max-height: 50px;
+}
+
+.search-box input{
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+.search-box button{
+    background-color: #007bff;
+    color: white;
+    border: 1px solid blue;
+    padding: 5px 10px;
+}
+
+.user-link a{
+    color: blue;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.main-content{
+    display: flex;
+}
+
+.left-sidebar{
+    flex: 1;
+    padding: 20px;
+    color: #3366cc;
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+}
