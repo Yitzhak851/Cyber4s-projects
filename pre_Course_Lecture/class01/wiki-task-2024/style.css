@@ -56,3 +56,14 @@ header{
     display: flex;
     flex-direction: column;
 }
+
+.accordion-item-summary{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-item-content{
+    padding: 10px;
+    cursor: pointer;
+}
+
