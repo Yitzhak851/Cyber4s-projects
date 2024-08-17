@@ -3,9 +3,6 @@
         # HTML overview
 1. Introduction
 2. Elements
-    <h1> elements 
-    <h2> elements
-    <p> elements
 3. Nesting of Elements
 4. Add an immage
 5. CSS
@@ -16,25 +13,29 @@
 10. Comments
 11. HTML + CSS + Javascript
 
-Lorem ipsum
-Comments
-Nesting of elements
-Add an immage
-Anchor elements <a>
-Open in new tab
-ID arrtibute and hash symbol
-Nesting links
-Elements as links
-Anorder list <ul>
-Order list <ol>
-<input> elements
-Placeholder arrtibute
-Radio buttons
-Checkbox
-Checkbox or Radio buttons Checked by defult
-<div> elements
-HTML page structure
-<head> elements of HTML page
+
+1.  <h1> elements 
+2.  <h2> elements
+3.  <p> elements
+4.  Lorem ipsum
+5.  Comments
+6.  Nesting of elements
+7.  Add an immage
+8.  Anchor elements <a>
+9.  Open in new tab
+10. ID arrtibute and hash symbol
+11. Nesting links
+12. Elements as links
+13. Anorder list <ul>
+14. Order list <ol>
+15. <input> elements
+16. Placeholder arrtibute   // continue $$$$$$$$$$$$$$$$$$$$$$$$$
+17. Radio buttons
+18. Checkbox
+19. Checkbox or Radio buttons Checked by defult
+20. <div> elements
+21. HTML page structure
+22. <head> elements of HTML page
 
 
 - Task 1:

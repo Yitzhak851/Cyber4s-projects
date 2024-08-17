@@ -1,25 +1,38 @@
-# Subject
+# CSS 4-13
+# =========== Subjects =========== :
+        # HTML overview
+16. Placeholder arrtibute   // continue $$$$$$$$$$$$$$$$$$$$$$$$$
+17. Radio buttons
+18. Checkbox
+19. Checkbox or Radio buttons Checked by defult
+20. <div> elements
+21. HTML page structure
+22. <head> elements of HTML page
 
-CSS overview
 
-Color of elements (style arrtibute)
-Style by tag name
-CSS classes
-ID
-Color
-Background
-Font
-Text decoretion
-Size
-Units and calc()
-Status selector: hover, active, disable
-Cursor
-Boundaries(margin,padding,bording)
-Outline
-Position
-z-index
-Display
-Media-query
-Flex-box
+
+
+
+
+        # CSS overview
+1.  Color of elements (style arrtibute)
+2.  Style by tag name
+3.  CSS classes
+4.  ID
+5.  Color
+6.  Background
+7.  Font
+8.  Text decoretion
+9.  Size
+10. Units and calc()
+11. Status selector: hover, active, disable
+12. Cursor
+13. Boundaries(margin,padding,bording)
+14. Outline
+15. Position
+16. z-index  // comment
+17. Display
+18. Media-query
+19. Flex-box
 
 // end comment add
