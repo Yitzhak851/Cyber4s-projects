@@ -1,0 +1,15 @@
+table{
+    margin: 20px;
+}
+
+.light-cell {
+    background-color: rgb(210, 210, 210);
+    width: 30px;
+    height: 30px;
+}
+
+.dark-cell {
+    background-color: rgb(29, 27, 27);
+    width: 30px;
+    height: 30px;
+}
