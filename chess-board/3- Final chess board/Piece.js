@@ -77,7 +77,6 @@ class Piece {
 
   getMovesInDirection(directionRow, directionCol, boardData) {
     let result = [];
-
     for (let i = 1; i < BOARD_SIZE; i++) {
       let row = this.row + directionRow * i;
       let col = this.col + directionCol * i;
