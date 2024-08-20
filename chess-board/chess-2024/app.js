@@ -24,7 +24,7 @@ function createChessBoard(){
 }
 
 // call 
-window.addEventListener('load', createChessBoard() );
+window.addEventListener('load', createChessBoard );
 
 
 
