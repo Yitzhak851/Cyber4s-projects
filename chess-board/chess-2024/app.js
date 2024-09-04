@@ -1,4 +1,5 @@
 // create the fields of the boards
+// Add comment
 const BOARD_SIZE = 8;
 
 // the fofo create chess board
